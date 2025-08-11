@@ -1,0 +1,11 @@
+{
+  "aws": [
+    "proj1"
+  ],
+  "rust": [
+    "proj1"
+  ],
+  "kubernetes": [
+    "proj1"
+  ]
+}

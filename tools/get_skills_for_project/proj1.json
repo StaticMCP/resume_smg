@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "[\n  {\n    \"id\": \"rust\",\n    \"name\": \"Rust\",\n    \"type\": \"language\",\n    \"category\": \"backend\"\n  }\n]"
+    }
+  ]
+}

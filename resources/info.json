@@ -1,0 +1,5 @@
+{
+  "uri": "resume://info",
+  "mimeType": "application/json",
+  "text": "{\n  \"name\": \"John Doe\",\n  \"location\": \"San Francisco, CA\",\n  \"phone_number\": \"888 888-8888\",\n  \"email\": \"johndoe@gmail.com\",\n  \"links\": {\n    \"github\": \"https://github.com/johndoe\",\n    \"linkedin\": \"https://linkedin.com/in/johndoe\"\n  }\n}"
+}

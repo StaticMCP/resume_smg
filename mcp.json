@@ -1,0 +1,115 @@
+{
+  "protocolVersion": "2025-06-18",
+  "capabilities": {
+    "resources": [
+      {
+        "uri": "resume://info",
+        "name": "Personal Information",
+        "description": "Basic personal details and contact information",
+        "mimeType": "application/json"
+      },
+      {
+        "uri": "resume://experiences",
+        "name": "All Experiences",
+        "description": "Complete list of work experiences",
+        "mimeType": "application/json"
+      },
+      {
+        "uri": "resume://projects",
+        "name": "All Projects",
+        "description": "Complete list of projects",
+        "mimeType": "application/json"
+      },
+      {
+        "uri": "resume://skills",
+        "name": "All Skills",
+        "description": "Complete list of skills",
+        "mimeType": "application/json"
+      }
+    ],
+    "tools": [
+      {
+        "name": "get_skills_for_project",
+        "description": "Get all skills used in a specific project",
+        "inputSchema": {
+          "properties": {
+            "project_id": {
+              "description": "Project ID",
+              "type": "string"
+            }
+          },
+          "required": [
+            "project_id"
+          ],
+          "type": "object"
+        }
+      },
+      {
+        "name": "get_projects_using_skill",
+        "description": "Get all projects that use a specific skill",
+        "inputSchema": {
+          "properties": {
+            "skill_id": {
+              "description": "Skill ID",
+              "type": "string"
+            }
+          },
+          "required": [
+            "skill_id"
+          ],
+          "type": "object"
+        }
+      },
+      {
+        "name": "get_experiences_using_skill",
+        "description": "Get all experiences that involve a specific skill",
+        "inputSchema": {
+          "properties": {
+            "skill_id": {
+              "description": "Skill ID",
+              "type": "string"
+            }
+          },
+          "required": [
+            "skill_id"
+          ],
+          "type": "object"
+        }
+      },
+      {
+        "name": "get_shared_skills",
+        "description": "Get skills shared between two projects",
+        "inputSchema": {
+          "properties": {
+            "project_a": {
+              "description": "First project ID",
+              "type": "string"
+            },
+            "project_b": {
+              "description": "Second project ID",
+              "type": "string"
+            }
+          },
+          "required": [
+            "project_a",
+            "project_b"
+          ],
+          "type": "object"
+        }
+      },
+      {
+        "name": "find_skill_clusters",
+        "description": "Find clusters of skills that frequently appear together",
+        "inputSchema": {
+          "properties": {},
+          "required": [],
+          "type": "object"
+        }
+      }
+    ]
+  },
+  "serverInfo": {
+    "name": "static-resume-mcp",
+    "version": "0.1.0"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "[\n  {\n    \"id\": \"exp1\",\n    \"title\": \"Senior Engineer\",\n    \"start_date\": \"2022-01-15T00:00:00Z\",\n    \"end_date\": null,\n    \"projects\": [\n      \"proj1\",\n      \"proj2\"\n    ]\n  }\n]"
+    }
+  ]
+}

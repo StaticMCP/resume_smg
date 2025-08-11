@@ -1,0 +1,11 @@
+{
+  "rust": [
+    "exp1"
+  ],
+  "aws": [
+    "exp1"
+  ],
+  "kubernetes": [
+    "exp1"
+  ]
+}

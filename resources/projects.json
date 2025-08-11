@@ -1,0 +1,5 @@
+{
+  "uri": "resume://projects",
+  "mimeType": "application/json",
+  "text": "[\n  {\n    \"id\": \"proj1\",\n    \"title\": \"Microservices Migration\",\n    \"duration\": \"6 months\",\n    \"description\": \"Led migration to microservices\",\n    \"skills\": [\n      \"rust\",\n      \"kubernetes\",\n      \"aws\"\n    ]\n  }\n]"
+}
