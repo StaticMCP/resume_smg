@@ -1,0 +1,47 @@
+{
+    "resume": {
+        "info": {
+            "name": "John Doe",
+            "location": "San Francisco, CA",
+            "phone_number": "888 888-8888",
+            "email": "johndoe@gmail.com",
+            "links": {
+                "linkedin": "https://linkedin.com/in/johndoe",
+                "github": "https://github.com/johndoe"
+            }
+        },
+        "experiences": [
+            {
+                "id": "exp1",
+                "title": "Senior Engineer",
+                "start_date": "2022-01-15T00:00:00Z",
+                "end_date": null,
+                "projects": [
+                    "proj1",
+                    "proj2"
+                ]
+            }
+        ],
+        "projects": [
+            {
+                "id": "proj1",
+                "title": "Microservices Migration",
+                "duration": "6 months",
+                "description": "Led migration to microservices",
+                "skills": [
+                    "rust",
+                    "kubernetes",
+                    "aws"
+                ]
+            }
+        ],
+        "skills": [
+            {
+                "id": "rust",
+                "name": "Rust",
+                "type": "language",
+                "category": "backend"
+            }
+        ]
+    }
+}

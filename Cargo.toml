@@ -1,0 +1,19 @@
+[package]
+name = "resume_smg"
+description = "Tool to generate a resume of StaticMCP."
+version = "0.0.1"
+edition = "2024"
+license = "MIT"
+repository = "https://github.com/StaticMCP/resume_smg"
+
+[[bin]]
+name = "resume_smg"
+path = "src/main.rs"
+
+[dependencies]
+chrono = { version = "0.4", features = ["serde"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+[dev-dependencies]
+tempfile = "3.8"
