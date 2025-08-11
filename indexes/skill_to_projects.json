@@ -1,11 +1,31 @@
 {
-  "aws": [
+  "react": [
+    "proj2"
+  ],
+  "kubernetes": [
     "proj1"
   ],
   "rust": [
     "proj1"
   ],
-  "kubernetes": [
-    "proj1"
+  "aws": [
+    "proj1",
+    "proj2"
+  ],
+  "stripe": [
+    "proj3"
+  ],
+  "css": [
+    "proj3"
+  ],
+  "kafka": [
+    "proj2"
+  ],
+  "typescript": [
+    "proj2",
+    "proj3"
+  ],
+  "nextjs": [
+    "proj3"
   ]
 }

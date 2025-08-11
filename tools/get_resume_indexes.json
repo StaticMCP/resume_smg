@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"project_to_experiences\": {\n    \"proj1\": [\n      \"exp1\"\n    ],\n    \"proj2\": [\n      \"exp1\"\n    ],\n    \"proj3\": [\n      \"exp2\"\n    ]\n  },\n  \"skill_to_experiences\": {\n    \"aws\": [\n      \"exp1\"\n    ],\n    \"css\": [\n      \"exp2\"\n    ],\n    \"kafka\": [\n      \"exp1\"\n    ],\n    \"kubernetes\": [\n      \"exp1\"\n    ],\n    \"nextjs\": [\n      \"exp2\"\n    ],\n    \"react\": [\n      \"exp1\"\n    ],\n    \"rust\": [\n      \"exp1\"\n    ],\n    \"stripe\": [\n      \"exp2\"\n    ],\n    \"typescript\": [\n      \"exp1\",\n      \"exp2\"\n    ]\n  },\n  \"skill_to_projects\": {\n    \"aws\": [\n      \"proj1\",\n      \"proj2\"\n    ],\n    \"css\": [\n      \"proj3\"\n    ],\n    \"kafka\": [\n      \"proj2\"\n    ],\n    \"kubernetes\": [\n      \"proj1\"\n    ],\n    \"nextjs\": [\n      \"proj3\"\n    ],\n    \"react\": [\n      \"proj2\"\n    ],\n    \"rust\": [\n      \"proj1\"\n    ],\n    \"stripe\": [\n      \"proj3\"\n    ],\n    \"typescript\": [\n      \"proj2\",\n      \"proj3\"\n    ]\n  }\n}"
+    }
+  ]
+}

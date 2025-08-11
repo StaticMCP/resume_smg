@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "[\n  {\n    \"id\": \"kafka\",\n    \"name\": \"Kafka\",\n    \"type\": \"streaming\",\n    \"category\": \"backend\"\n  },\n  {\n    \"id\": \"react\",\n    \"name\": \"React\",\n    \"type\": \"framework\",\n    \"category\": \"frontend\"\n  },\n  {\n    \"id\": \"typescript\",\n    \"name\": \"TypeScript\",\n    \"type\": \"language\",\n    \"category\": \"frontend\"\n  },\n  {\n    \"id\": \"aws\",\n    \"name\": \"AWS\",\n    \"type\": \"cloud\",\n    \"category\": \"devops\"\n  }\n]"
+    }
+  ]
+}

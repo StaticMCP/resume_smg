@@ -2,7 +2,7 @@
   "content": [
     {
       "type": "text",
-      "text": "[\n  {\n    \"id\": \"rust\",\n    \"name\": \"Rust\",\n    \"type\": \"language\",\n    \"category\": \"backend\"\n  }\n]"
+      "text": "[\n  {\n    \"id\": \"rust\",\n    \"name\": \"Rust\",\n    \"type\": \"language\",\n    \"category\": \"backend\"\n  },\n  {\n    \"id\": \"kubernetes\",\n    \"name\": \"Kubernetes\",\n    \"type\": \"orchestration\",\n    \"category\": \"devops\"\n  },\n  {\n    \"id\": \"aws\",\n    \"name\": \"AWS\",\n    \"type\": \"cloud\",\n    \"category\": \"devops\"\n  }\n]"
     }
   ]
 }

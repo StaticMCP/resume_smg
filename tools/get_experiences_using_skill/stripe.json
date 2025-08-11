@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "[\n  {\n    \"id\": \"exp2\",\n    \"title\": \"Frontend Developer\",\n    \"employer\": \"Some Co.\",\n    \"start_date\": \"2019-06-01T00:00:00Z\",\n    \"end_date\": \"2021-02-28T00:00:00Z\",\n    \"projects\": [\n      \"proj3\"\n    ]\n  }\n]"
+    }
+  ]
+}

@@ -105,6 +105,56 @@
           "required": [],
           "type": "object"
         }
+      },
+      {
+        "name": "get_basic_info",
+        "description": "Get basic personal information",
+        "inputSchema": {
+          "properties": {},
+          "required": [],
+          "type": "object"
+        }
+      },
+      {
+        "name": "get_resume_indexes",
+        "description": "Get index-level details for skills, projects, and experiences",
+        "inputSchema": {
+          "properties": {},
+          "required": [],
+          "type": "object"
+        }
+      },
+      {
+        "name": "get_experience_details",
+        "description": "Get detailed information about a specific experience",
+        "inputSchema": {
+          "properties": {
+            "experience_id": {
+              "description": "Experience ID",
+              "type": "string"
+            }
+          },
+          "required": [
+            "experience_id"
+          ],
+          "type": "object"
+        }
+      },
+      {
+        "name": "get_project_details",
+        "description": "Get detailed information about a specific project",
+        "inputSchema": {
+          "properties": {
+            "project_id": {
+              "description": "Project ID",
+              "type": "string"
+            }
+          },
+          "required": [
+            "project_id"
+          ],
+          "type": "object"
+        }
       }
     ]
   },

@@ -1,9 +1,28 @@
 {
+  "kafka": [
+    "exp1"
+  ],
+  "typescript": [
+    "exp1",
+    "exp2"
+  ],
   "rust": [
+    "exp1"
+  ],
+  "stripe": [
+    "exp2"
+  ],
+  "react": [
     "exp1"
   ],
   "aws": [
     "exp1"
+  ],
+  "css": [
+    "exp2"
+  ],
+  "nextjs": [
+    "exp2"
   ],
   "kubernetes": [
     "exp1"

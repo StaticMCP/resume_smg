@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "[\n  {\n    \"id\": \"proj1\",\n    \"title\": \"Microservices Migration\",\n    \"duration\": \"6 months\",\n    \"description\": \"Led migration from monolith to microservices architecture using Rust and Kubernetes.\",\n    \"skills\": [\n      \"rust\",\n      \"kubernetes\",\n      \"aws\"\n    ]\n  },\n  {\n    \"id\": \"proj2\",\n    \"title\": \"Realtime Analytics Platform\",\n    \"duration\": \"1 year\",\n    \"description\": \"Built a scalable analytics platform with Kafka and React dashboard.\",\n    \"skills\": [\n      \"kafka\",\n      \"react\",\n      \"typescript\",\n      \"aws\"\n    ]\n  }\n]"
+    }
+  ]
+}

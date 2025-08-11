@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "[\n  {\n    \"id\": \"nextjs\",\n    \"name\": \"Next.js\",\n    \"type\": \"framework\",\n    \"category\": \"frontend\"\n  },\n  {\n    \"id\": \"stripe\",\n    \"name\": \"Stripe\",\n    \"type\": \"payment\",\n    \"category\": \"integration\"\n  },\n  {\n    \"id\": \"typescript\",\n    \"name\": \"TypeScript\",\n    \"type\": \"language\",\n    \"category\": \"frontend\"\n  },\n  {\n    \"id\": \"css\",\n    \"name\": \"CSS\",\n    \"type\": \"language\",\n    \"category\": \"frontend\"\n  }\n]"
+    }
+  ]
+}

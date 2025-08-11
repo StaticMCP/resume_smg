@@ -1,5 +1,5 @@
 {
   "uri": "resume://info",
   "mimeType": "application/json",
-  "text": "{\n  \"name\": \"John Doe\",\n  \"location\": \"San Francisco, CA\",\n  \"phone_number\": \"888 888-8888\",\n  \"email\": \"johndoe@gmail.com\",\n  \"links\": {\n    \"github\": \"https://github.com/johndoe\",\n    \"linkedin\": \"https://linkedin.com/in/johndoe\"\n  }\n}"
+  "text": "{\n  \"name\": \"Jane Smith\",\n  \"location\": \"Penang, Malaysia\",\n  \"phone_number\": \"555 123-4567\",\n  \"email\": \"janesmith@email.com\",\n  \"links\": {\n    \"linkedin\": \"https://linkedin.com/in/janesmith\",\n    \"github\": \"https://github.com/janesmith\",\n    \"twitter\": \"https://twitter.com/janesmith\",\n    \"website\": \"https://janesmith.dev\"\n  }\n}"
 }

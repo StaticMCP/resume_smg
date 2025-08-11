@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"id\": \"proj3\",\n  \"title\": \"E-commerce Web App\",\n  \"duration\": \"8 months\",\n  \"description\": \"Developed a full-featured e-commerce site with Next.js and Stripe integration.\",\n  \"skills\": [\n    \"nextjs\",\n    \"stripe\",\n    \"typescript\",\n    \"css\"\n  ]\n}"
+    }
+  ]
+}

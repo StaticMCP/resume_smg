@@ -1,5 +1,5 @@
 {
   "uri": "resume://experiences",
   "mimeType": "application/json",
-  "text": "[\n  {\n    \"id\": \"exp1\",\n    \"title\": \"Senior Engineer\",\n    \"start_date\": \"2022-01-15T00:00:00Z\",\n    \"end_date\": null,\n    \"projects\": [\n      \"proj1\",\n      \"proj2\"\n    ]\n  }\n]"
+  "text": "[\n  {\n    \"id\": \"exp1\",\n    \"title\": \"Lead Backend Engineer\",\n    \"employer\": \"Tech Innovations Inc.\",\n    \"start_date\": \"2021-03-01T00:00:00Z\",\n    \"end_date\": null,\n    \"projects\": [\n      \"proj1\",\n      \"proj2\"\n    ]\n  },\n  {\n    \"id\": \"exp2\",\n    \"title\": \"Frontend Developer\",\n    \"employer\": \"Some Co.\",\n    \"start_date\": \"2019-06-01T00:00:00Z\",\n    \"end_date\": \"2021-02-28T00:00:00Z\",\n    \"projects\": [\n      \"proj3\"\n    ]\n  }\n]"
 }

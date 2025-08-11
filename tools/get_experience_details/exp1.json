@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"id\": \"exp1\",\n  \"title\": \"Lead Backend Engineer\",\n  \"employer\": \"Tech Innovations Inc.\",\n  \"start_date\": \"2021-03-01T00:00:00Z\",\n  \"end_date\": null,\n  \"projects\": [\n    \"proj1\",\n    \"proj2\"\n  ]\n}"
+    }
+  ]
+}

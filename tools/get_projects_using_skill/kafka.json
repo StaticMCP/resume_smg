@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "[\n  {\n    \"id\": \"proj2\",\n    \"title\": \"Realtime Analytics Platform\",\n    \"duration\": \"1 year\",\n    \"description\": \"Built a scalable analytics platform with Kafka and React dashboard.\",\n    \"skills\": [\n      \"kafka\",\n      \"react\",\n      \"typescript\",\n      \"aws\"\n    ]\n  }\n]"
+    }
+  ]
+}

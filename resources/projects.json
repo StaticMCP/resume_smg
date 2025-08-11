@@ -1,5 +1,5 @@
 {
   "uri": "resume://projects",
   "mimeType": "application/json",
-  "text": "[\n  {\n    \"id\": \"proj1\",\n    \"title\": \"Microservices Migration\",\n    \"duration\": \"6 months\",\n    \"description\": \"Led migration to microservices\",\n    \"skills\": [\n      \"rust\",\n      \"kubernetes\",\n      \"aws\"\n    ]\n  }\n]"
+  "text": "[\n  {\n    \"id\": \"proj1\",\n    \"title\": \"Microservices Migration\",\n    \"duration\": \"6 months\",\n    \"description\": \"Led migration from monolith to microservices architecture using Rust and Kubernetes.\",\n    \"skills\": [\n      \"rust\",\n      \"kubernetes\",\n      \"aws\"\n    ]\n  },\n  {\n    \"id\": \"proj2\",\n    \"title\": \"Realtime Analytics Platform\",\n    \"duration\": \"1 year\",\n    \"description\": \"Built a scalable analytics platform with Kafka and React dashboard.\",\n    \"skills\": [\n      \"kafka\",\n      \"react\",\n      \"typescript\",\n      \"aws\"\n    ]\n  },\n  {\n    \"id\": \"proj3\",\n    \"title\": \"E-commerce Web App\",\n    \"duration\": \"8 months\",\n    \"description\": \"Developed a full-featured e-commerce site with Next.js and Stripe integration.\",\n    \"skills\": [\n      \"nextjs\",\n      \"stripe\",\n      \"typescript\",\n      \"css\"\n    ]\n  }\n]"
 }
