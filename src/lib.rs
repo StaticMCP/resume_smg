@@ -31,6 +31,7 @@ pub struct PersonalInfo {
 pub struct Experience {
     pub id: String,
     pub title: String,
+    pub employer: String,
     pub start_date: DateTime<Utc>,
     pub end_date: Option<DateTime<Utc>>,
     pub projects: Vec<String>,
@@ -238,6 +239,46 @@ impl StaticGenerator {
                             "required": []
                         }),
                     },
+                    MCPToolSchema {
+                        name: "get_basic_info".to_string(),
+                        description: "Get basic personal information".to_string(),
+                        input_schema: serde_json::json!({
+                            "type": "object",
+                            "properties": {},
+                            "required": []
+                        }),
+                    },
+                    MCPToolSchema {
+                        name: "get_resume_indexes".to_string(),
+                        description: "Get index-level details for skills, projects, and experiences".to_string(),
+                        input_schema: serde_json::json!({
+                            "type": "object",
+                            "properties": {},
+                            "required": []
+                        }),
+                    },
+                    MCPToolSchema {
+                        name: "get_experience_details".to_string(),
+                        description: "Get detailed information about a specific experience".to_string(),
+                        input_schema: serde_json::json!({
+                            "type": "object",
+                            "properties": {
+                                "experience_id": {"type": "string", "description": "Experience ID"}
+                            },
+                            "required": ["experience_id"]
+                        }),
+                    },
+                    MCPToolSchema {
+                        name: "get_project_details".to_string(),
+                        description: "Get detailed information about a specific project".to_string(),
+                        input_schema: serde_json::json!({
+                            "type": "object",
+                            "properties": {
+                                "project_id": {"type": "string", "description": "Project ID"}
+                            },
+                            "required": ["project_id"]
+                        }),
+                    },
                 ],
             },
             server_info: MCPServerInfo {
@@ -300,6 +341,10 @@ impl StaticGenerator {
         fs::create_dir_all(format!("{}/tools/get_projects_using_skill", self.output_dir))?;
         fs::create_dir_all(format!("{}/tools/get_experiences_using_skill", self.output_dir))?;
         fs::create_dir_all(format!("{}/tools/get_shared_skills", self.output_dir))?;
+        fs::create_dir_all(format!("{}/tools/get_basic_info", self.output_dir))?;
+        fs::create_dir_all(format!("{}/tools/get_resume_indexes", self.output_dir))?;
+        fs::create_dir_all(format!("{}/tools/get_experience_details", self.output_dir))?;
+        fs::create_dir_all(format!("{}/tools/get_project_details", self.output_dir))?;
 
         for project in &self.resume.projects {
             let skills: Vec<&Skill> = project
@@ -450,6 +495,61 @@ impl StaticGenerator {
             format!("{}/tools/find_skill_clusters.json", self.output_dir),
             serde_json::to_string_pretty(&result)?,
         )?;
+
+        let basic_info_result = MCPToolResult {
+            content: vec![MCPToolContent {
+                content_type: "text".to_string(),
+                text: serde_json::to_string_pretty(&self.resume.info)?,
+            }],
+        };
+        fs::write(
+            format!("{}/tools/get_basic_info.json", self.output_dir),
+            serde_json::to_string_pretty(&basic_info_result)?
+        )?;
+
+        let indexes = serde_json::json!({
+            "skill_to_projects": &self.index.skill_to_projects,
+            "skill_to_experiences": &self.index.skill_to_experiences,
+            "project_to_experiences": &self.index.project_to_experiences,
+        });
+        let indexes_result = MCPToolResult {
+            content: vec![MCPToolContent {
+                content_type: "text".to_string(),
+                text: serde_json::to_string_pretty(&indexes)?,
+            }],
+        };
+        fs::write(
+            format!("{}/tools/get_resume_indexes.json", self.output_dir),
+            serde_json::to_string_pretty(&indexes_result)?
+        )?;
+
+        for experience in &self.resume.experiences {
+            let result = MCPToolResult {
+                content: vec![MCPToolContent {
+                    content_type: "text".to_string(),
+                    text: serde_json::to_string_pretty(&experience)?,
+                }],
+            };
+            
+            fs::write(
+                format!("{}/tools/get_experience_details/{}.json", self.output_dir, experience.id),
+                serde_json::to_string_pretty(&result)?,
+            )?;
+        }
+
+        for project in &self.resume.projects {
+            let result = MCPToolResult {
+                content: vec![MCPToolContent {
+                    content_type: "text".to_string(),
+                    text: serde_json::to_string_pretty(&project)?,
+                }],
+            };
+            
+            fs::write(
+                format!("{}/tools/get_project_details/{}.json", self.output_dir, project.id),
+                serde_json::to_string_pretty(&result)?,
+            )?;
+        }
 
         Ok(())
     }

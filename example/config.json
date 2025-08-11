@@ -1,24 +1,37 @@
 {
     "resume": {
         "info": {
-            "name": "John Doe",
-            "location": "San Francisco, CA",
-            "phone_number": "888 888-8888",
-            "email": "johndoe@gmail.com",
+            "name": "Jane Smith",
+            "location": "Penang, Malaysia",
+            "phone_number": "555 123-4567",
+            "email": "janesmith@email.com",
             "links": {
-                "linkedin": "https://linkedin.com/in/johndoe",
-                "github": "https://github.com/johndoe"
+                "linkedin": "https://linkedin.com/in/janesmith",
+                "github": "https://github.com/janesmith",
+                "website": "https://janesmith.dev",
+                "twitter": "https://twitter.com/janesmith"
             }
         },
         "experiences": [
             {
                 "id": "exp1",
-                "title": "Senior Engineer",
-                "start_date": "2022-01-15T00:00:00Z",
+                "title": "Lead Backend Engineer",
+                "employer": "Tech Innovations Inc.",
+                "start_date": "2021-03-01T00:00:00Z",
                 "end_date": null,
                 "projects": [
                     "proj1",
                     "proj2"
+                ]
+            },
+            {
+                "id": "exp2",
+                "title": "Frontend Developer",
+                "employer": "Some Co.",
+                "start_date": "2019-06-01T00:00:00Z",
+                "end_date": "2021-02-28T00:00:00Z",
+                "projects": [
+                    "proj3"
                 ]
             }
         ],
@@ -27,11 +40,35 @@
                 "id": "proj1",
                 "title": "Microservices Migration",
                 "duration": "6 months",
-                "description": "Led migration to microservices",
+                "description": "Led migration from monolith to microservices architecture using Rust and Kubernetes.",
                 "skills": [
                     "rust",
                     "kubernetes",
                     "aws"
+                ]
+            },
+            {
+                "id": "proj2",
+                "title": "Realtime Analytics Platform",
+                "duration": "1 year",
+                "description": "Built a scalable analytics platform with Kafka and React dashboard.",
+                "skills": [
+                    "kafka",
+                    "react",
+                    "typescript",
+                    "aws"
+                ]
+            },
+            {
+                "id": "proj3",
+                "title": "E-commerce Web App",
+                "duration": "8 months",
+                "description": "Developed a full-featured e-commerce site with Next.js and Stripe integration.",
+                "skills": [
+                    "nextjs",
+                    "stripe",
+                    "typescript",
+                    "css"
                 ]
             }
         ],
@@ -41,6 +78,54 @@
                 "name": "Rust",
                 "type": "language",
                 "category": "backend"
+            },
+            {
+                "id": "kubernetes",
+                "name": "Kubernetes",
+                "type": "orchestration",
+                "category": "devops"
+            },
+            {
+                "id": "aws",
+                "name": "AWS",
+                "type": "cloud",
+                "category": "devops"
+            },
+            {
+                "id": "kafka",
+                "name": "Kafka",
+                "type": "streaming",
+                "category": "backend"
+            },
+            {
+                "id": "react",
+                "name": "React",
+                "type": "framework",
+                "category": "frontend"
+            },
+            {
+                "id": "typescript",
+                "name": "TypeScript",
+                "type": "language",
+                "category": "frontend"
+            },
+            {
+                "id": "nextjs",
+                "name": "Next.js",
+                "type": "framework",
+                "category": "frontend"
+            },
+            {
+                "id": "stripe",
+                "name": "Stripe",
+                "type": "payment",
+                "category": "integration"
+            },
+            {
+                "id": "css",
+                "name": "CSS",
+                "type": "language",
+                "category": "frontend"
             }
         ]
     }
